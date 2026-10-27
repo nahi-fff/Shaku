@@ -1,1 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fffafc">
+<title>Sorry, My Love 💗</title>
+<style>
+:root{--ink:#302343;--pink:#ff6cae;--deep:#f34c91;--purple:#a78bfa;--mint:#80d8b5;--yellow:#ffe28a;--paper:#fffdfd}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;color:var(--ink);font-family:"Trebuchet MS",system-ui,sans-serif;background-color:#fffdfd;background-image:radial-gradient(#f7d5e5 1px,transparent 1px),radial-gradient(#e9defb 1px,transparent 1px);background-size:25px 25px,41px 41px;background-position:0 0,12px 14px;display:grid;place-items:center;padding:15px;overflow-x:hidden}
+.wrap{position:relative;width:min(100%,440px);min-height:min(760px,calc(100svh - 30px));padding:28px 20px 22px;border:1.5px solid #f7d4e4;border-radius:26px;background:rgba(255,255,255,.91);box-shadow:0 12px 36px #a36b8b17;display:flex;flex-direction:column;align-items:center;text-align:center;overflow:hidden}
+.decor{position:absolute;pointer-events:none;opacity:.9;font-size:19px;animation:drift 3s ease-in-out infinite}
+.d1{top:9%;left:7%}.d2{top:20%;right:7%;animation-delay:.5s}.d3{bottom:15%;left:8%;animation-delay:1s}.d4{bottom:10%;right:8%;animation-delay:.7s}
+@keyframes drift{50%{transform:translateY(-7px) rotate(8deg)}}
+.screen{display:none;width:100%;flex:1;flex-direction:column;align-items:center;justify-content:center;animation:appear .35s ease}
+.screen.active{display:flex}
+@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+h1{font-size:clamp(27px,7vw,36px);line-height:1.12;margin:8px 0 12px;font-weight:900;letter-spacing:-.7px}
+h2{font-size:23px;margin:9px 0}
+p{font-size:15px;line-height:1.55;margin:8px 0 16px}
+.sub{font-size:12px;letter-spacing:.6px;color:#9b7b9e;text-transform:uppercase;font-weight:800}
+.illustration{font-size:61px;line-height:1.2;margin-bottom:9px;filter:drop-shadow(0 4px 0 #fbe2ef)}
+.script{font-family:"Trebuchet MS",cursive;color:#cf5c9a;text-shadow:1px 1px #ffe1ee}
+.btn{border:0;border-radius:15px;padding:13px 18px;font-weight:900;font-size:15px;color:var(--ink);cursor:pointer;box-shadow:0 4px 0 #e9b5d0;transition:transform .15s;width:auto;max-width:100%}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #e9b5d0}
+.pink{background:linear-gradient(110deg,#ff86b9,#ffb1d0)}
+.purple{background:#d9c8ff;box-shadow:0 4px 0 #b8a0e8}
+.yellow{background:#ffe48e;box-shadow:0 4px 0 #e9ca68}
+.green{background:#a8ebd0;box-shadow:0 4px 0 #76caa9}
+.outline{background:#fff;border:1.5px solid #cbb8d7;box-shadow:0 4px 0 #e4d9eb}
+.buttons{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:10px 0}
+.panel{width:100%;border:2px dashed #e3c4de;border-radius:18px;padding:16px 12px;background:#fffafd;margin:8px 0}
+.tiny{font-size:12px;color:#8d7897}
+.dots{display:flex;gap:6px;justify-content:center;margin-top:18px}
+.dot{width:7px;height:7px;border:1px solid #bba7c8;border-radius:50%}.dot.on{background:#d96da8;border-color:#d96da8}
+.pills{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin:12px 0}
+.pill{border:1px solid #bca4cf;border-radius:999px;padding:9px 12px;background:#e5d5ff;font-size:12px;font-weight:800;color:#49375e;cursor:pointer}
+.pill:nth-child(3n+1){background:#ffe19a}.pill:nth-child(3n+2){background:#ffcee4}.pill:nth-child(3n){background:#bdebd8}
+.pill.done{opacity:.5;text-decoration:line-through;transform:scale(.96)}
+.meter{width:100%;height:13px;border:2px solid #392b4c;border-radius:999px;padding:2px;margin:12px 0;background:white}
+.meterfill{height:100%;width:15%;background:linear-gradient(90deg,#ffb0d0,#a58bff);border-radius:999px;transition:width .35s}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;margin:12px 0}
+.photo{border:3px solid white;outline:1.5px solid #e6b5d3;border-radius:12px;min-height:122px;background:#fff0f7;overflow:hidden;display:flex;align-items:center;justify-content:center;color:#9a6990;font-size:12px;padding:8px;transform:rotate(-2deg)}
+.photo:nth-child(2n){transform:rotate(2deg);background:#f5efff}
+.photo img{width:100%;height:125px;object-fit:cover;display:block}
+.letter{text-align:left;background:#fff8fb;border:1px dashed #e4aaca;border-radius:15px;padding:16px;line-height:1.65;font-size:14px;margin:10px 0}
+input[type=file]{display:none}
+.foot{font-size:10px;color:#b09db4;margin-top:14px}
+@media(min-height:780px){.wrap{min-height:720px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <span class="decor d1">💗</span><span class="decor d2">✨</span><span class="decor d3">🌷</span><span class="decor d4">💌</span>
+  <section class="screen active" id="s1">
+    <div class="sub">A tiny page made with love</div>
+    <div class="illustration">🥺💗</div>
+    <h1 class="script">Sorry, My Love</h1>
+    <p>I messed up, and I know I owe you a real apology. I want to say sorry properly and remind you how much you mean to me.</p>
+    <button class="btn pink" onclick="go(2)">Open my apology 💌</button>
+    <div class="dots"><i class="dot on"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+  </section>
 
+  <section class="screen" id="s2">
+    <div class="illustration">🫶🏻</div>
+    <h1>Do you know I never wanted to hurt you?</h1>
+    <div class="panel">
+      <p>I messed up and I know it. Can you give me a chance to say sorry properly?</p>
+      <div class="buttons">
+        <button class="btn yellow" onclick="go(3)">YES 💛</button>
+        <button class="btn outline" onclick="nope()">NO</button>
+      </div>
+      <p id="reply" class="tiny">Choose wisely ♡</p>
+    </div>
+    <div class="dots"><i class="dot"></i><i class="dot on"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+  </section>
+
+  <section class="screen" id="s3">
+    <div class="illustration">🧸💭</div>
+    <h1>Pop my mistakes</h1>
+    <p><b><span id="count">7</span> mistakes left.</b> Tap them all! 💗</p>
+    <div class="pills" id="mistakes">
+      <button class="pill" onclick="pop(this)">Late reply</button><button class="pill" onclick="pop(this)">Forgetting</button>
+      <button class="pill" onclick="pop(this)">Wrong words</button><button class="pill" onclick="pop(this)">Silly fight</button>
+      <button class="pill" onclick="pop(this)">My ego</button><button class="pill" onclick="pop(this)">Silence</button>
+      <button class="pill" onclick="pop(this)">Bad mood</button>
+    </div>
+    <p class="tiny" id="mistakeMsg">Every mistake is something I can learn from.</p>
+    <button class="btn pink" onclick="go(4)">Next ➜</button>
+    <div class="dots"><i class="dot"></i><i class="dot"></i><i class="dot on"></i><i class="dot"></i><i class="dot"></i></div>
+  </section>
+
+  <section class="screen" id="s4">
+    <div class="illustration">🩹💗</div>
+    <h1>My promise to you</h1>
+    <p>I don't want to just say sorry. I want to show you that I can do better.</p>
+    <div class="panel">
+      <p>💗 I will listen more carefully.</p><p>🌷 I will choose my words with care.</p><p>🫶 I will respect your feelings and space.</p><p>✨ I will show change through my actions.</p>
+    </div>
+    <p><b>My effort meter</b></p><div class="meter"><div class="meterfill" id="meterfill"></div></div>
+    <button class="btn pink" onclick="document.getElementById('meterfill').style.width='100%';go(5)">One more thing ➜</button>
+    <div class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot on"></i><i class="dot"></i></div>
+  </section>
+
+  <section class="screen" id="s5">
+    <div class="illustration">🧸🌷</div>
+    <h1>Us, always</h1>
+    <p>Tap a photo box to add a picture from your phone.</p>
+    <div class="photos">
+      <label class="photo" id="photo1">📷 Tap to add photo 1<input type="file" accept="image/*" onchange="addPhoto(event,'photo1')"></label>
+      <label class="photo" id="photo2">📷 Tap to add photo 2<input type="file" accept="image/*" onchange="addPhoto(event,'photo2')"></label>
+      <label class="photo" id="photo3">📷 Tap to add photo 3<input type="file" accept="image/*" onchange="addPhoto(event,'photo3')"></label>
+      <label class="photo" id="photo4">📷 Tap to add photo 4<input type="file" accept="image/*" onchange="addPhoto(event,'photo4')"></label>
+    </div>
+    <button class="btn pink" onclick="go(6)">Read my letter 💌</button>
+    <div class="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot on"></i></div>
+  </section>
+
+  <section class="screen" id="s6">
+    <div class="illustration">💌</div>
+    <h1 class="script">A letter for you</h1>
+    <div class="letter">My love,<br><br>I'm truly sorry for hurting you. You matter to me, and your feelings deserve care and respect. I won't make excuses or expect you to forgive me straight away. I want to listen, understand what this felt like for you, and prove with my actions that I'm learning.<br><br>Thank you for being you. Take all the time you need. 💗<br><br>Always, with care.</div>
+    <button class="btn pink" onclick="go(7)">Finish 💗</button>
+  </section>
+
+  <section class="screen" id="s7">
+    <div class="illustration">🎀💖✨</div>
+    <h1 class="script">Forgiven? 🌸</h1>
+    <p>Thank you for reading my little apology. I care about you, and I will respect your feelings, whatever you decide.</p>
+    <div class="panel"><h2>💗 You mean a lot to me 💗</h2><p class="tiny">A small page, with a sincere promise to do better.</p></div>
+    <button class="btn purple" onclick="go(1)">Read again ↻</button>
+  </section>
+  <div class="foot">made with care • change the words to make it yours</div>
+</main>
+<script>
+function go(n){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById('s'+n).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function nope(){const r=document.getElementById('reply');r.textContent="That's okay. Take your time — no pressure to answer now. 💜";}
+function pop(el){if(el.classList.contains('done'))return;el.classList.add('done');el.disabled=true;let n=+document.getElementById('count').textContent-1;document.getElementById('count').textContent=n;if(n===0)document.getElementById('mistakeMsg').textContent="I know I need to keep learning and do better. 💗";}
+function addPhoto(e,id){const file=e.target.files&&e.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=()=>{const box=document.getElementById(id);box.innerHTML='';const img=document.createElement('img');img.src=reader.result;img.alt='Your chosen photo';box.appendChild(img);};reader.readAsDataURL(file);}
+</script>
+</body>
+</html>
